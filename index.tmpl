@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="description" content="Tübix CfP regisitrierung für Leute die gerne einen Vortrag halten wollen.">
+    <title>Tübix Call for Papers</title>
+    <!-- Favicons-->
+
+    <link name="msapplication-TileColor" content="#FFFFFF">
+    <link rel="icon" type="image/x-icon" href="public/favicon.ico">
+    <!--  Android 5 Chrome Color-->
+    <meta name="theme-color" content="#EE6E73">
+    <!-- CSS-->
+    <link href="public/css/materialize.min.css" rel="stylesheet">
+    <link href="public/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="public/js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="public/js/materialize.min.js"></script>
+  </head>
+
+  <body>
+
+<form id="mrForm">
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Tübix - Call for Papÿrus</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Hilf uns ein tolles Programm auf die Beine zu stellen!</h5>
+      </div>
+      <br><br>
+
+<img src="public/tux.png" alt="Tux" title="Tux" style="display: block; margin-left: auto; margin-right: auto;"/>
+
+      <h5 class="header col s12 light">Noch <b><span id="cfpDate"></span></b> Tage bis Ende des Call for Papers</h5>
+      <h5 class="header col s12 light">Noch <b><span id="tuebixDate"></span></b> Tage bis Tübix am 11. Juni 2016</h5>
+
+    </div>
+  </div>
+
+
+
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+
+
+            <h2 class="center light-blue-text"><img height="36" width="36" src="public/workshop.svg"></h2>
+            <h5 class="center">Workshops</h5>
+
+            <p class="light">"<i>Code is poetry!</i>" Du hast die Gabe, andere für ein Thema zu begeistern, das man am besten lernt, wenn man sich selbst die Hände schmutzig macht.</p>
+ 
+
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><img height="36" width="36" src="public/talk.svg"></h2>
+            <h5 class="center">Vorträge</h5>
+
+            <p class="light">Du hast Dich länger mit einem Thema rumgeschlagen und möchtest Deine Erfahrungen und Einsichten gerne ausführlich in Bild (Beamer) und Ton (Deine Stimme) teilen.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+
+            <h2 class="center light-blue-text"><img height="36" width="36" src="public/lightning.svg"></h2>
+            <h5 class="center">Lightning Talks</h5>
+
+            <p class="light">"<i>Struck by lightning and bitten by a cobra!</i>" <br> Du hast ein interessantes Thema und möchtest in einem Kurzvortrag von genau 5 Minuten Deine Ideen in die Community tragen.</p>
+
+
+
+
+         </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  <div class="container">
+
+
+
+<!-- <h2>Wann/Wo?</h2> -->
+
+<!--<pre>
+01.03.2016   Call for Papers Beginn
+17.04.2016   Call for Papers Ende
+01.05.2016   Programmveröffentlichung
+01.05.2016   Call for Helpers Beginn
+11.06.2016   TÜBIX
+</pre>-->
+
+
+
+
+
+
+
+
+<h2 id="vorschlagChapter">Vorschlag einreichen</h2>
+
+  <div class="row">
+    <div class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="name" name="name" type="text" class="validate">
+          <label for="name">Vor- und Nachname</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">email</i>
+          <input id="email" name="email" type="email" class="validate">
+          <label for="email" data-error="wrong" data-success="right">eMail (wird nicht veröffentlicht)</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+<h3 id="beitragChapter"><i class="material-icons prefix">info_outline</i> Mein Beitrag ist ein</h3>
+    <p>Wähle eine/mehrere Kategorie(en) für deinen Beitrag. Das hilft uns bei der Planung immens:
+    </p>
+
+    <p>
+      <input type="checkbox" class="filled-in" name="type.lt5" id="lt5" />
+      <label for="lt5">Lightning Talk (5 Minuten)</label>
+    </p>
+    <!--<p>
+      <input type="checkbox" class="filled-in" name="type.lt10" id="lt10" />
+      <label for="lt10">Lightning Talk (10 Minuten)</label>
+    </p>-->
+
+    <p>
+      <input type="checkbox" class="filled-in" name="type.v25" id="v25" />
+      <label for="v25">Vortrag (25 Minuten)</label>
+    </p>
+    <p>
+      <input type="checkbox" class="filled-in" name="type.v55" id="v55"  />
+
+      <label for="v55">Vortrag (55 Minuten)</label>
+    </p>
+
+    <p style="margin-left: 30px;">
+Wir haben viele kleine Vortragsräume und könnten somit viele Workshops anbieten, falls dein Vortrag auch als Workshop möglich wäre, so klicke: 
+    </p>
+    <p style="margin-left: 30px;">
+      <input type="checkbox" class="filled-in" name="type.vortrag-als-ws" id="vortrag-als-ws"  />
+      <label for="vortrag-als-ws">Vortrag auch als Workshop möglich.</label>
+    </p>
+
+    <p>
+      <input type="checkbox" class="filled-in" name="type.workshop" id="workshop"  />
+      <label for="workshop">Workshop (120 Minuten)</label>
+    </p>
+
+
+
+
+
+
+
+
+
+<h3 id="mitschnitteChapter"><i class="material-icons prefix">mic_none</i> / <i class="material-icons prefix">videocam</i> Mitschnitte Audio/Film</h3>
+        
+    Ich bin damit einverstanden Audio-/Videomitschnitte Meines Beitrags auf (z.B. tuebix.org) zu veröffentlichen:
+
+    <p>
+      <input name="mitschnittZugestimmt" type="radio" id="mitschnittZustimmungJA" name="mitschnittZustimmungJA" />
+      <label for="mitschnittZustimmungJA">Ja, darf veröffentlicht werden.</label>
+    </p>
+    <p>
+      <input name="mitschnittZugestimmt" type="radio" id="mitschnittZustimmungNEIN" name="mitschnittZustimmungNEIN"  />
+      <label for="mitschnittZustimmungNEIN">Bitte nichts mitschneiden oder veröffentlichen!</label>
+    </p>
+
+
+
+
+
+
+<h3 id="titelChapter">Titel</h3>
+Wähle einen fetzigen kurzen Titel: 
+<input type="checkbox" name="titel" value=""><br>
+
+ <div class="row">
+      <div class="col s11">
+        <div class="row">
+          <div class="input-field col s11">
+            <input name="titel" id="titel" type="text"  length="80">
+            <label for="titel">Titel</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+<h3 id="buzzwordChapter">Buzzword Bingo</h3>
+Nenne ein paar Schlagworte, die helfen deinen Vortrag thematisch
+einzuordnen (Technologien, Programmiersprachen, Distributionen etc.)
+<input type="checkbox" name="buzzword" value=""><br>
+
+ <div class="row">
+      <div class="col s11">
+        <div class="row">
+          <div class="input-field col s11">
+            <input name="buzzword" id="buzzword" type="text">
+            <label for="buzzword">(bitte mit Komma trennen)</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+<h3 id="inhaltChapter">Inhalt</h3>
+<p>Beschreibe Deinen Beitrag prägnant in wenigen Sätzen:</p>
+  <div class="row">
+    <div class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea name="inhalt" id="inhalt" class="materialize-textarea"></textarea>
+          <label for="inhalt">Inhalt</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<h3 id="vorwissenChapter">Vorwissen</h3>
+<p>Gestalte Deinen Beitrag so, dass er einem breiten Publikum zugänglich ist. Falls Du aber spezielle Anforderungen an dein Publikum hast, dann nenne bzw. warne sie hier:</p>
+  <div class="row">
+    <div class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea name="vorwissen" id="vorwissen" class="materialize-textarea"></textarea>
+          <label for="vorwissen">Gewünschtes Vorwissen der Teilnehmer</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<h3 id="weblinksChapter">Weblinks</h3>
+<p>Hinterlege hier eine Liste an Weblinks:
+  <div class="row">
+    <div class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea name="weblinks" id="weblinks" class="materialize-textarea"></textarea>
+          <label for="weblinks">Weblinks</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<h3 id="sonstigesChapter"><i class="material-icons prefix">speaker_notes</i> Sonstiges</h3>
+<p>Falls für Dich wichtige Punkte noch nicht geklärt sind, bitte nenne diese hier.<br> (Wird nicht in das Programm mit aufgenommen und nur vom Tübix-Orga-Team gelesen):</p>
+  <div class="row">
+    <div class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea name="sonstiges" id="sonstiges" class="materialize-textarea"></textarea>
+          <label for="sonstiges">Sonstiges</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--<h3><i class="material-icons prefix">info</i> Captcha</h3>
+<p>Hier musst du noch einen komischen Text eintippen:</p>
+
+<img src="http://smashingyolo.com/wp-content/uploads/2014/07/Best-Wordpress-Captcha-Plugins1.1.jpg" style="width: 100%">
+  <div class="row">
+    <div class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="captcha" class="materialize-textarea"></textarea>
+          <label name="captcha" for="captcha">Was ist der dritte Buchstabe im Captcha mit der Koordinate: 9 von oben, 6te von links?</label>
+        </div>
+      </div>
+    </div>
+  </div>-->
+
+<h3 id="regelnChapter">Regeln</h3>
+Falls Du mehrere Beiträge einreichst, bitte pro Beitragsthema jeweils diese Anmeldung ausfüllen.
+<br>ALLE von Dir hier eingegebenen Inhalte, außer Deiner eMail-Adresse &amp; <i>Sonstiges</i> , werden so auf tuebix.org in unserem Programm veröffentlicht
+
+
+<p style="margin-left: 30px;">
+  <input type="checkbox" class="filled-in" name="AGBakzeptiert" id="AGBakzeptiert" />
+  <label for="AGBakzeptiert">Regeln zur Kenntnis genommen.</label>
+</p>
+
+
+<h3>Weg damit!</h3>
+
+<p>Wir senden Dir 'manuell' eine Bestätigung über Deine Einreichung via eEmail, damit Du dir sicher sein kannst, dass dein Beitrag bei uns eingegangen ist.</p>
+
+  <button id="submitButton" onClick="submitForm(this); return false;" class="btn waves-effect waves-light" type="b">Beitrag einreichen
+    <i class="material-icons right">send</i>
+  </button>
+
+<div id="status">
+</div>
+
+<!-- Modal Trigger -->
+<!--   <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
+
+
+
+<br><br>
+<b>30. April 2016 Ende CfP <br>
+10. Mai 2016  Zu- und Absagen</b>
+
+
+
+</div>
+
+</form>
+
+
+
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Beitrag erfolgreich eingereicht</h4>
+      <p>Vielen Dank für Deine Einreichung. Wir senden Dir in Kürze 'manuell' eine Bestätigungsemail mit Deinen eingegeben Daten.</p>
+      <p><b>30. April 2016 Ende CfP <br>
+10. Mai 2016  Zu- und Absagen</b>
+</p>
+
+      <p><b>Hinweis:</b><br>Wenn Du noch weitere Beiträge einreichen willst, dann lade diese Webseite einfach neu.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">ok!</a>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+    <br><br>
+
+    <div class="section">
+
+    </div>
+  </div>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Tübix - der Tübinger Linuxtag</h5>
+          <p class="grey-text text-lighten-4">Wir freuen uns, wenn Du am 11. Juni mit dabei bist und wir zusammen einen spannenden Thementag erleben.</p>.
+        </div>
+
+      </div>
+
+
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made with <a class="orange-text text-lighten-3" href="https://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+<script>
+
+/*
+http://stackoverflow.com/questions/9335140/how-to-countdown-to-a-date
+*/
+
+    /////////// counter tuebix
+    function updateCounter(date){
+      var end = new Date(date);
+      var _second = 1000;
+      var _minute = _second * 60;
+      var _hour = _minute * 60;
+      var _day = _hour * 24;
+
+      var now = new Date();
+      var distance = end - now;
+      if (distance < 0) {
+          return "EXPIRED";
+      }
+      var days = Math.floor(distance / _day);
+      var hours = Math.floor((distance % _day) / _hour);
+      var minutes = Math.floor((distance % _hour) / _minute);
+      var seconds = Math.floor((distance % _minute) / _second);
+      return days;
+    }
+    document.getElementById('tuebixDate').innerHTML = updateCounter('06/11/2016 10:00 AM')
+    document.getElementById('cfpDate').innerHTML = updateCounter('04/30/2016 10:00 AM')
+
+  function scrollTo(el) {
+    $('html,body').animate({
+      scrollTop: $(el).offset().top
+    }, 500);
+  }
+
+  function submitForm(){
+
+ 
+    // check name/email
+    if ($('#name').val() == "") {
+      Materialize.toast('Der Name wurde noch nicht gesetzt.', 4000)
+      scrollTo($('#vorschlagChapter'));
+      
+      $("#vorschlag").fadeIn(1000).fadeOut(1000).fadeIn(100).fadeOut(100).fadeIn(100);
+      $('#name').focus();
+      return;
+    }
+    if ($('#email').val() == "") {
+      Materialize.toast('Die Emailadresse wurde noch nicht gesetzt.', 4000)
+      scrollTo($('#vorschlagChapter'));
+      
+      $("#vorschlag").fadeIn(1000).fadeOut(1000).fadeIn(100).fadeOut(100).fadeIn(100);
+      return;
+    }
+    // check if at least one type was selected
+
+    // check recording
+    if (!($('#mitschnittZustimmungJA')[0].checked == true || $('#mitschnittZustimmungNEIN')[0].checked == true)) {
+      Materialize.toast('Mitschnitte, jetzt JA oder NEIN?!', 4000)
+      scrollTo($('#mitschnitteChapter'));
+      
+      $("#mitschnitteChapter").fadeIn(1000).fadeOut(1000).fadeIn(100).fadeOut(100).fadeIn(100);
+      return;    
+    }
+
+    // titel
+    if ($('#titel').val() == "") {
+      Materialize.toast('Finde einen Titel!', 4000)
+      scrollTo($('#titelChapter'));
+      
+      $("#titelChapter").fadeIn(1000).fadeOut(1000).fadeIn(100).fadeOut(100).fadeIn(100);
+      $('#titel').focus();
+
+      return;
+    }
+
+    //buzzword
+    if ($('#buzzword').val() == "") {
+      Materialize.toast('Finde einen Titel!', 4000)
+      scrollTo($('#buzzwordChapter'));
+      
+      $("#buzzwordChapter").fadeIn(1000).fadeOut(1000).fadeIn(100).fadeOut(100).fadeIn(100);
+      $('#buzzword').focus();
+
+      return;
+    }
+
+    // inhalt
+    if ($('#inhalt').val() == "") {
+      Materialize.toast('Dein Beitrag hat keinen Inhalt?', 4000)
+      scrollTo($('#inhaltChapter'));
+      
+      $("#inhaltChapter").fadeIn(1000).fadeOut(1000).fadeIn(100).fadeOut(100).fadeIn(100);
+      $('#inhalt').focus();
+
+      return;
+    }
+
+    // check AGBakzeptiert
+    if ($('#AGBakzeptiert')[0].checked == false) {
+      Materialize.toast('Regeln nicht gelesen oder was?!', 4000)
+      scrollTo($('#regelnChapter'));
+      
+      $("#regelnChapter").fadeIn(1000).fadeOut(1000).fadeIn(100).fadeOut(100).fadeIn(100);
+      $('#AGBakzeptiert').focus();
+      return;    
+    }
+ 
+    var form = $('#mrForm')
+    var url = form.attr("action");
+    var formData = {};
+    $(form).find("input[name]").each(function (index, node) {
+      if (node.type == "checkbox") {
+        formData[node.name] = (node.checked == true);
+      } else if (node.type == "radio"){
+        formData[node.name] = $('#mitschnittZustimmungJA').is(":checked")
+      } else {
+        formData[node.name] = node.value;
+      }
+    });
+    $(form).find("textarea[name]").each(function (index, node) {
+    
+    formData[node.name] = node.value;
+    });
+
+    $('#submitButton').attr("disabled","disabled");
+
+    $.ajax({
+        type: "POST",
+        url: "submit",
+        cache: false,
+        date: "submit",
+        data: formData,
+        success: function(data, status, jqXHR){
+          if (data.indexOf("200 Ok") == -1 ){
+            $('#status').html("<p><b>Beitrag erfolgreich eingereicht! **YAY**</b></p>")
+            $("#status").fadeIn(1000).fadeOut(1000).fadeIn(100).fadeOut(100).fadeIn(100);
+            $('#modal1').openModal();
+          }
+          console.log(data)
+        },
+        error: function( jqXHR, textStatus, errorThrown ){
+          alert("XHR request returned: " + textStatus);
+          $('#submitButton').removeAttr("disabled");
+        },
+        dataType: 'text'
+      });
+  }
+
+// http://stackoverflow.com/questions/895171/prevent-users-from-submitting-form-by-hitting-enter
+$(document).ready(function() {
+
+  $(document).on("keypress", ":input:not(textarea)", function(event) {
+      return event.keyCode != 13;
+  });
+
+  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+  $('.modal-trigger').leanModal();
+
+
+});
+
+
+</script>
+
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
