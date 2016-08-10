@@ -14,6 +14,53 @@ uses:
 * javascript
 * materialize
 
+## cfp.sh 
+```
+#!/bin/sh
+source /etc/profile
+cd /home/joachim/cfp
+nix-shell --command "while true; do go run server.go ; done"
+```
+
+## systemd service
+```
+  systemd.services.cfp = {
+    wantedBy = [ "multi-user.target" ];
+     after = [ "network.target" ];
+     serviceConfig = {
+       #Type = "forking";
+       User = "joachim";
+       ExecStart = ''/home/joachim/cfp.sh'';
+       ExecStop = ''
+       '';
+     };
+  };
+```
+
+## apache reverse proxy config
+```
+      ... 
+      # nixcloud.io (https)
+      {
+        hostName = "nixcloud.io";
+        serverAliases = [ "nixcloud.io" "www.nixcloud.io" ];
+
+        documentRoot = "/www/nixcloud.io/";
+        enableSSL = true;
+        sslServerCert = "/ssl/nixcloud.io-2015.crt";
+        sslServerKey = "/ssl/nixcloud.io-2015.key";
+        sslServerChain = "/ssl/nixcloud.io-2015-intermediata.der";
+
+        extraConfig = ''
+          ...
+          RewriteRule ^/cfp$ /cfp/ [R]
+          ProxyPass /cfp/ http://127.0.0.1:3000/ retry=0
+          ProxyPassReverse /cfp/ http://127.0.0.1:3000/
+          ...
+        '';
+      ...
+```
+
 # where
 
 you can see the form live at nixcloud.io/cfp
