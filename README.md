@@ -60,7 +60,8 @@ nix-shell --command "while true; do go run server.go ; done"
         '';
       ...
 ```
+# license
 
-# where
+public domain except the used libraries. relicense it the way you need it.
 
-you can see the form live at nixcloud.io/cfp
+author: joachim schiele <js@lastlog.de
